@@ -1,0 +1,39 @@
+<!--Nome: Carlos Henrique dos Santos Data:19/05/2022 Cod: LAB4-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+    <style>
+        button {
+            font: 12pt Arial;
+        }
+        
+        body {
+            font-size: 12pt;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com Dados</h1>
+    <button onclick="inicio()">Clique para começar</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado... </p>
+    </section>
+    <script>
+        function inicio() {
+            let nome = prompt('Qual é o seu nome?')
+            let res = document.getElementById('resultado').innerHTML = "<p>Olá,<strong> " + nome + "</strong>! É um grande prazer te conhecer! &#x1F596</p>"
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- nome da função estava errado "inicial" ao inves de "inicio" // Utilização (`) ao invés de " ou ' // window ao inves de document.getElement
+// res.innerHTML ao invés de let res = document...innerHTML // {$nome} não funciona então trocado pelo nome da variavel nome// retirado ";" no final e colocado "&" no inicio do emoji-->

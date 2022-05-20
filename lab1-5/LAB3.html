@@ -1,0 +1,28 @@
+<!--Nome: Carlos Henrique dos Santos Data:19/05/2022 Cod: LAB3-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 3 - Treinamento Javascript</title>
+</head>
+
+<body>
+    <h1>LAB 3 - Treinamento</h1>
+    <button onclick="OpenModal()">Clique para começar</button>
+    <p id="name"> </p>
+
+</body>
+
+<script>
+    function OpenModal() {
+
+        var PromptName = prompt("Qual \u00e9 o seu nome?", "")
+
+        if (PromptName != null) {
+            document.getElementById("name").innerHTML = "Ol\u00e1, " + PromptName + " \u00e9 um prazer te conhecer!";
+        }
+
+    }
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 5 - Treinamento Javascript</title>
+</head>
+
+<body>
+    <h1>LAB 5 - Treinamento</h1>
+    <button onclick="calc()">Clique para calcular</button>
+    <section>
+        <p id="result"></p>
+    </section>
+
+
+</body>
+
+<script>
+    function calc() {
+        let numb = prompt('Digite um número');
+
+        var mult = numb * 2;
+        var divided = numb / 2;
+
+        let result = document.getElementById('result').innerHTML = "<p>O dobro de " + numb + " é " + mult + " e a metade é " + divided + "!"
+    }
+</script>
