@@ -2,9 +2,9 @@ function teste() {
     let num = Number(window.prompt('Digite um número: '))
     let tipo
     if (num % 2 == 1) {
-        tipo = '<strong>PAR</strong>'
-    } else {
         tipo = '<strong>ÍMPAR</strong>'
+    } else {
+        tipo = '<strong>PAR</strong>'
     }
 
     let res = document.querySelector('section#result')
